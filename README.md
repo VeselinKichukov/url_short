@@ -3,7 +3,7 @@
 
 # URL Shortened
 
-##Steps to reproduce the application
+## Steps to reproduce the application
 
 - after cloning the repo, the .env file needs to be changed with the appropriate
 details for MySQL database which is used in the app
@@ -14,7 +14,7 @@ are used to shorten URLs
 - the command is php artisan fill-url
 - the command will pull the allowed words and fill the database 
 
-##Approach for choosing a command to pull the list of words
+## Approach for choosing a command to pull the list of words
 
 I wanted to make use of two good practices namely:
 Command and Service that will encapsulate some of the logic from the controller.
@@ -22,7 +22,7 @@ In this particular example the controller can manage if the logic is within it b
 for the sake of good practice, I decided to separate them.
 Another reason is that the command will run only once when the user initially populates the database. After that, it will be easier to handle collisions when generating the shortened form of the URLs and keep track of the visited links count. This way the app follows more clearly the MVC pattern. The alternative for the chosen approach could be caching and/or file-based database as well as other solutions.
 
-##Notes
+## Notes
 
 - Command(php artisan fill-url) - the command is intended to run at the beginning
   of the application in order to fill the database with the pulled words.
@@ -33,7 +33,7 @@ Another reason is that the command will run only once when the user initially po
   and give the user the option to see older records as well.
 
 
-##Assumptions:
+## Assumptions:
 I noticed differences between the description of the assignment and the mock-up.
 
 For example: In the description, it is not mentioned the use of checkbox and custom field for user input of short word, so I made the following assumptions:
