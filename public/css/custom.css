@@ -1,0 +1,30 @@
+h1{
+    font-size: 22pt;
+    font-weight: bold;
+}
+img{
+    width: 400px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#link{
+    text-decoration: underline;
+    color: #2979bc;
+    font-size: 18pt;
+}
+body{
+    font-size: 14pt;
+}
+#shorten-btn{
+    background-color: #2979bc;
+    color: white;
+}
+#app{
+    background-color: #eeeeee;
+}
+
+.form-check-input {
+    margin-top: 0.5rem;
+}
